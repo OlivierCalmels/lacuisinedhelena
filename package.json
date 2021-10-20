@@ -1,6 +1,6 @@
 {
-    "title": "Business Casual",
-    "name": "startbootstrap-business-casual",
+    "title": "La cuisine d'Helena",
+    "name": "lacuisinedhelena",
     "version": "7.0.5",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
@@ -29,11 +29,11 @@
     "license": "MIT",
     "author": "Start Bootstrap",
     "contributors": [
-        "David Miller (https://davidmiller.io/)"
+        ""
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-business-casual.git"
+        "url": ""
     },
     "dependencies": {
         "bootstrap": "5.1.1"
