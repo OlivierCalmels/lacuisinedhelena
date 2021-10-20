@@ -1,9 +1,5 @@
 @charset "UTF-8";
-/*!
-* Start Bootstrap - Business Casual v7.0.5 (https://startbootstrap.com/theme/business-casual)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-business-casual/blob/master/LICENSE)
-*/
+
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11276,7 +11272,8 @@ textarea.form-control-lg {
   }
 }
 body {
-  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../assets/img/bg.jpg");
+  /* background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../assets/img/bg.jpg"); */
+  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../assets/img/epices.jpeg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
