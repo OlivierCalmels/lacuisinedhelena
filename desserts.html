@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
@@ -28,18 +29,36 @@
           <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">La cuisine d'Helena</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mx-auto">
-                <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Accueil</a></li>
-                <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="desserts.html">Desserts</a></li>
-                <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="desserts-enfants.html">Desserts pour les enfants</a></li>
-                <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="buffets.html">Buffets salés</a></li>
-                <!-- <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="quisuisje.html">Qui suis-je</a></li> -->
-              </ul>
+            <ul class="navbar-nav mx-auto"> 
+              <li class="nav-item px-lg-4 btn"><a class="nav-link text-uppercase" href="index.html">Accueil</a></li>
+              <li class="btn-group">
+                <button type="button" class="nav-item px-lg-4 btn"> <a class="nav-link text-uppercase" href="desserts.html">Desserts</a></button>
+                <button type="button" class="nav-item px-lg-4 btn dropdown-toggle dropdown-toggle-split nav-link" style="color: rgba(255,255,255,0.7);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="desserts.html#char-au-chocolat">Charlotte au Chocolat</a>
+                  <a class="dropdown-item" href="desserts.html#char-aux-fraises">Charlotte au Fraises</a>
+                  <a class="dropdown-item" href="desserts.html#trianon">Trianon</a>
+
+                </div>
+              </li>
+
+              <li class="btn-group">
+                <button type="button" class="nav-item px-lg-4 btn"> <a class="nav-link text-uppercase" href="decors.html">Décors</a></button>
+                <button type="button" class="nav-item px-lg-4 btn dropdown-toggle dropdown-toggle-split nav-link" style="color: rgba(255,255,255,0.7);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="decors.html#fraisier-foot">Football (Fraisier)</a>
+                  <a class="dropdown-item" href="decors.html#bonne-fete">Bonne fête (Fraisier)</a>
+                  <a class="dropdown-item" href="decors.html#anniversaire-framboisier">Anniversaire (Framboisier)</a>
+                </div>
+              </li>
+            </ul>
           </div>
       </div>
     </nav>
       <!-- Charlotte aux chocolat -->
-      <section class="page-section">
+      <section class="page-section" id="char-au-chocolat">
         <div class="container">
             <div class="product-item">
                 <div class="product-item-title d-flex">
@@ -61,7 +80,7 @@
         </div>
       </section>
       <!-- Charlotte aux fraises -->
-      <section class="page-section">
+      <section class="page-section"  id="char-aux-fraises">
           <div class="container">
               <div class="product-item">
                   <div class="product-item-title d-flex">
@@ -81,65 +100,8 @@
               </div>
           </div>
       </section>
-      <!-- Fraisier foot -->
-      <section class="page-section">
-          <div class="container">
-              <div class="product-item">
-                  <div class="product-item-title d-flex">
-                      <div class="bg-faded p-5 d-flex ms-auto rounded">
-                          <h2 class="section-heading mb-0">
-                              <span class="section-heading-upper">La coupe du monde</span>
-                              <span class="section-heading-lower">des Fraisiers</span>
-                          </h2>
-                      </div>
-                  </div>
-                  <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/fraisierfoot.jpeg" alt="..." />
-                  <div class="product-item-description d-flex me-auto">
-                      <div class="bg-faded p-5 rounded"><p class="mb-0">Le Fraisier, gateau classique par excellence... qui saura ravir les gourmands et les fans du ballon rond. Génoise vanille, crème mousseline, garnie de fraises. Pour la décoration, pâte à sucre et figurines.</p></div>
-                  </div>
-              </div>
-          </div>
-      </section>
-      <!-- Fraisier bonne fête -->
-      <section class="page-section">
-          <div class="container">
-              <div class="product-item">
-                  <div class="product-item-title d-flex">
-                      <div class="bg-faded p-5 d-flex ms-auto rounded">
-                          <h2 class="section-heading mb-0">
-                              <span class="section-heading-upper">pour toutes les occasions</span>
-                              <span class="section-heading-lower">le Fraiser</span>
-                          </h2>
-                      </div>
-                  </div>
-                  <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/fraisierbonnefete.jpeg" alt="..." />
-                  <div class="product-item-description d-flex me-auto">
-                      <div class="bg-faded p-5 rounded"><p class="mb-0">Un fraisier réalisé à l'occasion d'une fête. Génoise vanille, crème diplomate, garnie de fraises.</p></div>
-                  </div>
-              </div>
-          </div>
-      </section>
-      <!-- Framboisier -->
-      <section class="page-section">
-      <div class="container">
-            <div class="product-item">
-                <div class="product-item-title d-flex">
-                    <div class="bg-faded p-5 d-flex ms-auto rounded">
-                        <h2 class="section-heading mb-0">
-                            <span class="section-heading-upper">Pour un anniversaire</span>
-                            <span class="section-heading-lower">le Framboisier</span>
-                        </h2>
-                    </div>
-                </div>
-                <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/framboisier.jpeg" alt="..." />
-                <div class="product-item-description d-flex me-auto">
-                    <div class="bg-faded p-5 rounded"><p class="mb-0">Pour les amoureux des fruits rouges. Génoise vanille, crème mousseline. Pour la décoration: encore plus de framboises... et de la chantilly</p></div>
-                </div>
-            </div>
-        </div>
-      </section>
       <!-- Trianon -->
-      <section class="page-section">
+      <section class="page-section" id="trianon">
         <div class="container">
               <div class="product-item">
                   <div class="product-item-title d-flex">
@@ -158,32 +120,13 @@
               </div>
           </div>
       </section>
-      <!-- Numer Cake -->
-      <section class="page-section">
-        <div class="container">
-              <div class="product-item">
-                  <div class="product-item-title d-flex">
-                      <div class="bg-faded p-5 d-flex ms-auto rounded">
-                          <h2 class="section-heading mb-0">
-                              <span class="section-heading-upper">taillé sur mesure</span>
-                              <span class="section-heading-lower">le Number Cake</span>
-                          </h2>
-                      </div>
-                  </div>
-                  <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/numbercake.jpeg" alt="..." />
-                  <div class="product-item-description d-flex me-auto">
-                      <div class="bg-faded p-5 rounded"><p class="mb-0"></p>
-                      Biscuit sablé amande, crème mousseline vanille.</div>
-                  </div>
-              </div>
-          </div>
-      </section>
       <footer class="footer text-faded text-center py-5">
         <div class="container"><p class="m-0 small">Copyright &copy; La Cuisine d'Helena 2021</p></div>
       </footer>
-      <!-- Bootstrap core JS-->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-      <!-- Core theme JS-->
-      <script src="js/scripts.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>

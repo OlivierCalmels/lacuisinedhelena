@@ -1,75 +1,95 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Bienvenue dans la cuisine d'Helena" />
-        <meta name="author" content="Helena" />
-        <title>La cuisine d'Helena</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <header>
-            <h1 class="site-heading text-center text-faded d-none d-lg-block">
-                <span class="site-heading-upper text-primary mb-3">Bienvenue dans</span>
-                <span class="site-heading-lower">La cuisine d'Helena</span>
-            </h1>
-        </header>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">La cuisine d'Helena</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Accueil</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="desserts.html">Desserts</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="buffets.html">Buffets salés</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="desserts-enfants.html">Desserts pour les enfants</a></li>
-                        <!-- <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="quisuisje.html">Qui suis-je</a></li> -->
-                    </ul>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Bienvenue dans la cuisine d'Helena" />
+    <meta name="author" content="Helena" />
+    <title>La cuisine d'Helena</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1 class="site-heading text-center text-faded d-none d-lg-block">
+          <span class="site-heading-upper text-primary mb-3">Bienvenue dans</span>
+          <span class="site-heading-lower">La cuisine d'Helena</span>
+      </h1>
+    </header>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+          <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">La cuisine d'Helena</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto"> 
+              <li class="nav-item px-lg-4 btn"><a class="nav-link text-uppercase" href="index.html">Accueil</a></li>
+              <li class="btn-group">
+                <button type="button" class="nav-item px-lg-4 btn"> <a class="nav-link text-uppercase" href="desserts.html">Desserts</a></button>
+                <button type="button" class="nav-item px-lg-4 btn dropdown-toggle dropdown-toggle-split nav-link" style="color: rgba(255,255,255,0.7);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="desserts.html#char-au-chocolat">Charlotte au Chocolat</a>
+                  <a class="dropdown-item" href="desserts.html#char-aux-fraises">Charlotte au Fraises</a>
+                  <a class="dropdown-item" href="desserts.html#trianon">Trianon</a>
+
                 </div>
-            </div>
-        </nav>
-        <!-- Buffet sale -->
-        <section class="page-section about-heading">
-          <div class="container">
-              <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="assets/img/buffetsale.jpeg" alt="..." />
-              <div class="about-heading-content">
-                  <div class="row">
-                      <div class="col-xl-9 col-lg-10 mx-auto">
-                          <div class="bg-faded rounded p-5">
-                              <h2 class="section-heading mb-4">
-                                  <span class="section-heading-upper">pour les repas complets</span>
-                                  <span class="section-heading-lower">le Buffet Salé</span>
-                              </h2>
-                              <p>Pour les repas complets, optez pour le buffet froid. Voici un exemple de buffet que j'ai réalisé par la passé.</p>
-                              <p class="mb-0">
-                                  Plateau de charcuterie - tomates cerise - fromage - olives - billes de mozzarella -
-                                  <em>wrap</em> jambon, salade, tomate, mayonnaise - 
-                                  <em>wrap</em> thon, salade, tomate, mayonnaise -
-                                  mini <em>sandwich</em> St Moret, saumon, concombre 
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+              </li>
+
+              <li class="btn-group">
+                <button type="button" class="nav-item px-lg-4 btn"> <a class="nav-link text-uppercase" href="decors.html">Décors</a></button>
+                <button type="button" class="nav-item px-lg-4 btn dropdown-toggle dropdown-toggle-split nav-link" style="color: rgba(255,255,255,0.7);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="decors.html#fraisier-foot">Football (Fraisier)</a>
+                  <a class="dropdown-item" href="decors.html#bonne-fete">Bonne fête (Fraisier)</a>
+                  <a class="dropdown-item" href="decors.html#anniversaire-framboisier">Anniversaire (Framboisier)</a>
+                </div>
+              </li>
+            </ul>
           </div>
+      </div>
+    </nav>
+      <!-- Buffet sale -->
+      <section class="page-section about-heading">
+        <div class="container">
+          <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="assets/img/buffetsale.jpeg" alt="..." />
+          <div class="about-heading-content">
+            <div class="row">
+              <div class="col-xl-9 col-lg-10 mx-auto">
+                <div class="bg-faded rounded p-5">
+                  <h2 class="section-heading mb-4">
+                    <span class="section-heading-upper">pour les repas complets</span>
+                    <span class="section-heading-lower">le Buffet Salé</span>
+                  </h2>
+                  <p>Pour les repas complets, optez pour le buffet froid. Voici un exemple de buffet que j'ai réalisé par la passé.</p>
+                  <p class="mb-0">
+                    Plateau de charcuterie - tomates cerise - fromage - olives - billes de mozzarella -
+                    <em>wrap</em> jambon, salade, tomate, mayonnaise - 
+                    <em>wrap</em> thon, salade, tomate, mayonnaise -
+                    mini <em>sandwich</em> St Moret, saumon, concombre 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-        <footer class="footer text-faded text-center py-5">
-            <div class="container"><p class="m-0 small">Copyright &copy; La Cuisine d'Helena 2021</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+    <footer class="footer text-faded text-center py-5">
+      <div class="container"><p class="m-0 small">Copyright &copy; La Cuisine d'Helena 2021</p></div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>

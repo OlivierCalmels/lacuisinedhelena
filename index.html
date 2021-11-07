@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
@@ -28,80 +29,124 @@
           <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">La cuisine d'Helena</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mx-auto">
-                <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Accueil</a></li>
-                <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="desserts.html">Desserts</a></li>
-                <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="desserts-enfants.html">Desserts pour les enfants</a></li>
-                <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="buffets.html">Buffets salés</a></li>
-                <!-- <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="quisuisje.html">Qui suis-je</a></li> -->
-              </ul>
+            <ul class="navbar-nav mx-auto"> 
+              <li class="nav-item px-lg-4 btn"><a class="nav-link text-uppercase" href="index.html">Accueil</a></li>
+              <li class="btn-group">
+                <button type="button" class="nav-item px-lg-4 btn"> <a class="nav-link text-uppercase" href="desserts.html">Desserts</a></button>
+                <button type="button" class="nav-item px-lg-4 btn dropdown-toggle dropdown-toggle-split nav-link" style="color: rgba(255,255,255,0.7);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="desserts.html#char-au-chocolat">Charlotte au Chocolat</a>
+                  <a class="dropdown-item" href="desserts.html#char-aux-fraises">Charlotte au Fraises</a>
+                  <a class="dropdown-item" href="desserts.html#trianon">Trianon</a>
+
+                </div>
+              </li>
+
+              <li class="btn-group">
+                <button type="button" class="nav-item px-lg-4 btn"> <a class="nav-link text-uppercase" href="decors.html">Décors</a></button>
+                <button type="button" class="nav-item px-lg-4 btn dropdown-toggle dropdown-toggle-split nav-link" style="color: rgba(255,255,255,0.7);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="decors.html#fraisier-foot">Football (Fraisier)</a>
+                  <a class="dropdown-item" href="decors.html#bonne-fete">Bonne fête (Fraisier)</a>
+                  <a class="dropdown-item" href="decors.html#anniversaire-framboisier">Anniversaire (Framboisier)</a>
+                  <a class="dropdown-item" href="decors.html#number-cake">Number Cake (Sablé amande - vanille)</a>
+                  <a class="dropdown-item" href="decors.html#layer-cake-pat-patrouille">Layer Cake Pat Patrouille</a>
+                  <a class="dropdown-item" href="decors.html#layer-cake-fleuri">Layer Cake Fleuri</a>
+                </div>
+              </li>
+            </ul>
           </div>
       </div>
     </nav>
-        <!-- Charlotte aux chocolat -->
-        <section class="page-section">
-          <div class="container">
-              <div class="product-item">
-                  <div class="product-item-title d-flex">
-                      <div class="bg-faded p-5 d-flex ms-auto rounded">
-                          <h2 class="section-heading mb-0">
-                              <span class="section-heading-upper">la Charlotte</span>
-                              <span class="section-heading-lower">au Chocolat</span>
-                          </h2>
-                      </div>
-                  </div>
-                  <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/charlottechocolat.jpeg" alt="..." />
-                  <div class="product-item-description d-flex me-auto">
-                      <div class="bg-faded p-5 rounded"><p class="mb-0">Ma version du célèbre gateau anglais, inventé au début du XIXème siècle, qui est un hommage à l’épouse du George III, la princesse Charlotte, grand-mère de la Reine Victoria.
-                      Je la réalise dans une version plus actuelle avec des biscuits cuillère, du mascarpone, de la crème chantilly pour la légèreté, du nutella pour la gourmandise.
-                      Pour la décoration: des Kinder Bueno et des Maltesers.
-                        </p></div>
-                  </div>
-              </div>
-          </div>
-        </section>
+    <section class="page-section about-heading">
       <div class="container">
-            <div class="product-item">
-                <div class="product-item-title d-flex">
-                    <div class="bg-faded p-5 d-flex ms-auto rounded">
-                        <h2 class="section-heading mb-0">
-                            <span class="section-heading-upper">From Around the World</span>
-                            <span class="section-heading-lower">Bulk Speciality Blends</span>
-                        </h2>
-                    </div>
-                </div>
-                <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/products-03.jpg" alt="..." />
-                <div class="product-item-description d-flex me-auto">
-                    <div class="bg-faded p-5 rounded"><p class="mb-0">Travelling the world for the very best quality coffee is something take pride in. When you visit us, you'll always find new blends from around the world, mainly from regions in Central and South America. We sell our blends in smaller to large bulk quantities. Please visit us in person for more details.</p></div>
-                </div>
-            </div>
-        </div>
-      </section>
-      <!-- Trianon -->
-      <section class="page-section">
-        <div class="container">
-              <div class="product-item">
-                  <div class="product-item-title d-flex">
-                      <div class="bg-faded p-5 d-flex ms-auto rounded">
-                          <h2 class="section-heading mb-0">
-                              <span class="section-heading-upper">From Around the World</span>
-                              <span class="section-heading-lower">Bulk Speciality Blends</span>
+          <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="assets/img/about.jpg" alt="..." />
+          <div class="about-heading-content">
+              <div class="row">
+                  <div class="col-xl-9 col-lg-10 mx-auto">
+                      <div class="bg-faded rounded p-5">
+                          <h2 class="section-heading mb-4">
+                              <span class="section-heading-upper">Les mets excellents</span>
+                              <span class="section-heading-lower">sur mesure, pour vous.</span>
                           </h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <p class="mb-0">
+                            Duis aute irure dolor in reprehenderit in 
+                              <em>voluptate velit</em>
+                              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                          </p>
                       </div>
-                  </div>
-                  <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/products-03.jpg" alt="..." />
-                  <div class="product-item-description d-flex me-auto">
-                      <div class="bg-faded p-5 rounded"><p class="mb-0">Travelling the world for the very best quality coffee is something take pride in. When you visit us, you'll always find new blends from around the world, mainly from regions in Central and South America. We sell our blends in smaller to large bulk quantities. Please visit us in person for more details.</p></div>
                   </div>
               </div>
           </div>
-        </section>
-        <footer class="footer text-faded text-center py-5">
-            <div class="container"><p class="m-0 small">Copyright &copy; La Cuisine d'Helena 2021</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+      </div>
+  </section>
+    <!-- <section class="page-section cta">
+      <div class="container">
+          <div class="row">
+              <div class="col-xl-9 mx-auto">
+                  <div class="cta-inner bg-faded text-center rounded">
+                      <h2 class="section-heading mb-5">
+                          <span class="section-heading-upper">Come On In</span>
+                          <span class="section-heading-lower">We're Open</span>
+                      </h2>
+                      <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+                          <li class="list-unstyled-item list-hours-item d-flex">
+                              Sunday
+                              <span class="ms-auto">Closed</span>
+                          </li>
+                          <li class="list-unstyled-item list-hours-item d-flex">
+                              Monday
+                              <span class="ms-auto">7:00 AM to 8:00 PM</span>
+                          </li>
+                          <li class="list-unstyled-item list-hours-item d-flex">
+                              Tuesday
+                              <span class="ms-auto">7:00 AM to 8:00 PM</span>
+                          </li>
+                          <li class="list-unstyled-item list-hours-item d-flex">
+                              Wednesday
+                              <span class="ms-auto">7:00 AM to 8:00 PM</span>
+                          </li>
+                          <li class="list-unstyled-item list-hours-item d-flex">
+                              Thursday
+                              <span class="ms-auto">7:00 AM to 8:00 PM</span>
+                          </li>
+                          <li class="list-unstyled-item list-hours-item d-flex">
+                              Friday
+                              <span class="ms-auto">7:00 AM to 8:00 PM</span>
+                          </li>
+                          <li class="list-unstyled-item list-hours-item d-flex">
+                              Saturday
+                              <span class="ms-auto">9:00 AM to 5:00 PM</span>
+                          </li>
+                      </ul>
+                      <p class="address mb-5">
+                          <em>
+                              <strong>1116 Orchard Street</strong>
+                              <br />
+                              Golden Valley, Minnesota
+                          </em>
+                      </p>
+                      <p class="mb-0">
+                          <small><em>Call Anytime</em></small>
+                          <br />
+                          (317) 585-8468
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section> -->
+    <footer class="footer text-faded text-center py-5">
+        <div class="container"><p class="m-0 small">Copyright &copy; La Cuisine d'Helena 2021</p></div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>
